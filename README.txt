@@ -1,3 +1,4 @@
+存在的问题：
 1.
 位置：app.js中拦截请求并根据登录状态进行操作
 问题：视频代码为 if(req.url != 'login && !req.session.username)，报的错误是TypeError: Cannot read property 'username' of undefined
