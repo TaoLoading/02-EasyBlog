@@ -8,7 +8,7 @@
     * 问题：使用res.redirect('/admin/login)重定向后只有html代码生效，css、js及引入的bootstrap、jQuery均失效
 
 * 问题3
-    * 位置：user.art文字中的对分页按钮的代码，<li style="display: <%= page-1<1?'none':'inline' %>">
+    * 位置：user.art文字中的对分页按钮的代码，`<li style="display: <%= page-1<1?'none':'inline' %>">`
     * 问题：VS Code报错property value expected
 
 * 问题4
