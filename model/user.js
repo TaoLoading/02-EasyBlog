@@ -37,6 +37,7 @@ const userSchema = new mongoose.Schema({
 // 创建集合
 const User = mongoose.model('User', userSchema)
 
+// 根据集合测试用户的创建
 // User.create({
 // 	username: 'lht',
 // 	email: '1377226380@qq.com',
