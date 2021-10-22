@@ -16,8 +16,9 @@ module.exports = (req, res) => {
 		// err：错误对象。如果表单解析失败，err里存储错误信息，如果解析成功，err就是null
 		// fields：保存普通表单数据，即除上传文件外的其他数据，对象类型
 		// files：保存上传文件相关的数据，对象类型
-		// console.log(files.cover.path) // 文件在本机的位置：d:\workplace\001-web\20-练习\03-blog\public\uploads\upload_94508070e4b2d0d4926e9f345ffa852b.png
-		// console.log(files.cover.path.split('public')[1]) // 截取后位于服务器的位置
+    // files.cover.path是文件在服务器端电脑的路径，不能直接被客户端使用
+		// console.log(files.cover.path) // d:\workplace\001-web\20-练习\03-blog\public\uploads\upload_94508070e4b2d0d4926e9f345ffa852b.png
+		// console.log(files.cover.path.split('public')[1]) // 截取后的路径
 		// 向文章集合中插入数据
 		await Article.create({
 			title: fields.title,

@@ -1,6 +1,6 @@
 //导入文章集合构造函数
 const { Article } = require('../../model/article')
-// 导入评论界和构造函数
+// 导入评论集合构造函数
 const { Comment } = require('../../model/comment')
 
 module.exports = async (req, res) => {
